@@ -1,4 +1,6 @@
+import pandas as pd
 
 def lambda_handler(event, context):
-    result = 1 + 2
-    print("The sum of 1 and 2 is:", result)
+    d = {'col1': [5,2], 'col2': [10,4]}
+    df = pd.DataFrame(data=d)
+    print(df)
