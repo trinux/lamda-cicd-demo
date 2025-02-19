@@ -9,7 +9,7 @@ def lambda_handler(event, context):
         content = quote_data.get("content")
         author = quote_data.get("author")
         print(f"Random Quote: '{content}' - {author}")
-        print("v1.2")
+        print("v1.3")
     else:
         print(f"Failed to retrieve a random quote. Status code: {response.status_code}")
 
